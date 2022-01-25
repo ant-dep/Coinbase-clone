@@ -6,9 +6,9 @@ import Coin from "./Coin";
 import BalanceChart from "./BalanceChart";
 
 const Portfolio = ({ thirdWebTokens, sanityTokens, walletAddress }) => {
-  console.log("Sanity Tokens", sanityTokens);
-  console.log("ThirdWeb Tokens", thirdWebTokens);
-  console.log("Wallet Address", walletAddress);
+  // console.log("Sanity Tokens", sanityTokens);
+  // console.log("ThirdWeb Tokens", thirdWebTokens);
+  // console.log("Wallet Address", walletAddress);
 
   const [walletBalance, setWalletBalance] = useState(0);
   const tokenToUSD = {};

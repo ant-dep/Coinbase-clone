@@ -83,6 +83,7 @@ const Wrapper = styled.div`
   margin-bottom: 00.3rem;
 
   &:hover {
+    cursor: pointer;
     background-color: #0e0f14;
   }
 `;

@@ -19,7 +19,7 @@ const Receive = ({ setAction, selectedToken, walletAddress }) => {
       <Content>
         <QRContainer>
           <img
-            src={`https://proxy-cors-ap.herokuapp.com/https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${walletAddress}`}
+            src={`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${walletAddress}`}
             alt=""
           />
         </QRContainer>
@@ -34,10 +34,11 @@ const Receive = ({ setAction, selectedToken, walletAddress }) => {
         </Row>
         <Divider />
         <Row>
-          <div>
-            <Title>{selectedToken.symbol} Address</Title>
-            <Address>{walletAddress}</Address>
-          </div>
+          <Title>{selectedToken.symbol} Address</Title>
+          <Address>
+            {walletAddress.slice(0, 10)}...
+            {walletAddress.slice(walletAddress.length - 10)}
+          </Address>
           {/* auto copy feature with dynamic icon confirmation */}
           <CopyButton
             onClick={() => {

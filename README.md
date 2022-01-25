@@ -5,6 +5,9 @@
 👇 <em>Result here</em>👇 </br>
 https://coinbase-clone-eight.vercel.app/
 
+👇 <em>Preview here</em>👇 </br>
+https://youtu.be/nF1CvXkr22o
+
 </br></br></br>
 
 <h2>FRONTEND</h2></br>

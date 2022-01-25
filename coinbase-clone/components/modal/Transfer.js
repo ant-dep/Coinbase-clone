@@ -114,7 +114,7 @@ const Transfer = ({
       </Row>
       <Row>
         <BalanceTitle>{selectedToken.symbol} Balance</BalanceTitle>
-        <Balance>
+        <Balance onClick={() => setAmount(balance.split(".")[0])}>
           {balance} {selectedToken.symbol}
         </Balance>
       </Row>
@@ -263,4 +263,9 @@ const Continue = styled.button`
 
 const BalanceTitle = styled.div``;
 
-const Balance = styled.div``;
+const Balance = styled.div`
+  &:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+`;
