@@ -9,11 +9,11 @@ https://coinbase-clone-eight.vercel.app/
 
 <h2>FRONTEND</h2></br>
 
-<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MJj0GQDG--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/5087/a22e0f35-f97b-4315-b0ca-7574cb45b73d.png" width="125" alt="ThirdWeb logo"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com%2Fwp-content%2Fuploads%2F2020%2F08%2FJavaScript-Backend-Image-1.png&f=1&nofb=1" width="200" alt="React.js logo"></br></br></br></br></br>
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--MJj0GQDG--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/organization/profile_image/5087/a22e0f35-f97b-4315-b0ca-7574cb45b73d.png" width="125" alt="ThirdWeb logo"><img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F2e8ram2s1li74atce18qz5y1-wpengine.netdna-ssl.com%2Fwp-content%2Fuploads%2F2020%2F08%2FJavaScript-Backend-Image-1.png&f=1&nofb=1" width="250" alt="React.js logo"></br></br></br></br></br>
 
 <h2>BACKEND</h2></br>
 
-<img src="https://cdn.sanity.io/images/3do82whm/next/5e3ee25224e03062626b3748c0258d729b1dc756-1200x900.png?w=800&h=600&fit=clip&auto=format" width="135" alt="Sanity logo"> <img src="https://logovtor.com/wp-content/uploads/2020/10/vercel-inc-logo-vector.png" width="200" alt="Vercel logo"></br></br></br></br></br></br>
+<img src="https://cdn.sanity.io/images/3do82whm/next/5e3ee25224e03062626b3748c0258d729b1dc756-1200x900.png?w=800&h=600&fit=clip&auto=format" width="150" alt="Sanity logo"> <img src="https://logovtor.com/wp-content/uploads/2020/10/vercel-inc-logo-vector.png" width="200" alt="Vercel logo"></br></br></br></br></br></br>
 
 <h2>Features</h2></br>
 
