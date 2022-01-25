@@ -1,8 +1,22 @@
 import React from "react";
 import styled from "styled-components";
 import { FaWallet } from "react-icons/fa";
+import Modal from "react-modal";
+import { useRouter } from "next/router";
+import TransferModal from "./modal/TransferModal";
+import Link from "next/link";
 
-const Header = ({ walletAddress, connectWallet }) => {
+Modal.setAppElement("#__next");
+
+// Mastering Prop Drilling btw, redux is for beginners
+const Header = ({
+  walletAddress,
+  sanityTokens,
+  thirdWebTokens,
+  connectWallet,
+}) => {
+  const router = useRouter();
+
   return (
     <Wrapper>
       <Title>Assets</Title>
@@ -19,8 +33,21 @@ const Header = ({ walletAddress, connectWallet }) => {
         <Button style={{ backgroundColor: "#3773f5", color: "#000" }}>
           Buy / Sell
         </Button>
-        <Button>Send / Receive</Button>
+        <Link href={"/?transfer=1"} passHref>
+          <Button>Send / Receive</Button>
+        </Link>
       </ButtonsContainer>
+      <Modal
+        isOpen={!!router.query.transfer}
+        onRequestClose={() => router.push("/")}
+        style={modalStyles}
+      >
+        <TransferModal
+          sanityTokens={sanityTokens}
+          thirdWebTokens={thirdWebTokens}
+          walletAddress={walletAddress}
+        />
+      </Modal>
     </Wrapper>
   );
 };
@@ -93,3 +120,19 @@ const WalletAddress = styled.div`
   font-size: 0.8rem;
   margin-left: 0.5rem;
 `;
+
+const modalStyles = {
+  content: {
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "#0a0b0d",
+    padding: "0",
+    border: "none",
+  },
+  overlay: {
+    backgroundColor: "rgba(10, 11, 13, 0.75)",
+  },
+};
