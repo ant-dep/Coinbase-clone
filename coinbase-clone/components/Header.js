@@ -14,6 +14,7 @@ const Header = ({
   sanityTokens,
   thirdWebTokens,
   connectWallet,
+  disconnectWallet,
 }) => {
   const router = useRouter();
 
@@ -22,13 +23,21 @@ const Header = ({
       <Title>Assets</Title>
       <ButtonsContainer>
         <WalletLink>
-          <WalletLinkTitle>
-            <FaWallet />
-          </WalletLinkTitle>
-          <WalletAddress>
-            {walletAddress.slice(0, 6)}...
-            {walletAddress.slice(walletAddress.length - 4)}
-          </WalletAddress>
+          {walletAddress ? (
+            <>
+              <WalletLinkTitle>
+                <FaWallet />
+              </WalletLinkTitle>
+              <WalletAddress onClick={disconnectWallet}>
+                {walletAddress.slice(0, 6)}...
+                {walletAddress.slice(walletAddress.length - 4)}
+              </WalletAddress>
+            </>
+          ) : (
+            <Button onClick={() => connectWallet("injected")}>
+              Connect Wallet
+            </Button>
+          )}
         </WalletLink>
         <Button style={{ backgroundColor: "#3773f5", color: "#000" }}>
           Buy / Sell
@@ -103,6 +112,11 @@ const WalletLink = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.005);
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;

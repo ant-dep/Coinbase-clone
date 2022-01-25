@@ -19,7 +19,7 @@ const Receive = ({ setAction, selectedToken, walletAddress }) => {
       <Content>
         <QRContainer>
           <img
-            src={`https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${walletAddress}`}
+            src={`https://proxy-cors-ap.herokuapp.com/https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${walletAddress}`}
             alt=""
           />
         </QRContainer>

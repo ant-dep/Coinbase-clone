@@ -3,11 +3,11 @@ import { useWeb3 } from "@3rdweb/hooks";
 import Dashboard from "./Dashboard";
 
 export default function Home() {
-  const { address, connectWallet } = useWeb3();
+  const { address, connectWallet, disconnectWallet } = useWeb3();
   return (
     <Wrapper>
       {address ? (
-        <Dashboard address={address} />
+        <Dashboard address={address} disconnectWallet={disconnectWallet} />
       ) : (
         <WalletConnect>
           <Button onClick={() => connectWallet("injected")}>

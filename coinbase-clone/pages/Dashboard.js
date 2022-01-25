@@ -15,7 +15,7 @@ const sdk = new ThirdwebSDK(
   )
 );
 
-const Dashboard = ({ address }) => {
+const Dashboard = ({ address, connectWallet, disconnectWallet }) => {
   const [sanityTokens, setSanityTokens] = useState([]);
   const [thirdWebTokens, setThirdWebTokens] = useState([]);
 
@@ -44,6 +44,8 @@ const Dashboard = ({ address }) => {
           walletAddress={address}
           sanityTokens={sanityTokens}
           thirdWebTokens={thirdWebTokens}
+          connectWallet={connectWallet}
+          disconnectWallet={disconnectWallet}
         />
         <Main
           walletAddress={address}
