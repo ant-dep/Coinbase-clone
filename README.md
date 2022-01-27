@@ -33,5 +33,5 @@ https://youtu.be/nF1CvXkr22o
 
 <hr class="line"></br></br></br>
 
-<img src="https://github.com/ant-dep/Coinbase-clone/blob/main/coinbase-clone/public/coinbase-dashboard.png?raw=true" width="1000" alt="Preview"></br>
-<img src="https://github.com/ant-dep/Coinbase-clone/blob/main/coinbase-clone/public/coinbase-modal.png?raw=true" width="1000" alt="Preview">
+<img src="https://github.com/ant-dep/Coinbase-clone/blob/main/public/coinbase-dashboard.png?raw=true" width="1000" alt="Preview"></br>
+<img src="https://github.com/ant-dep/Coinbase-clone/blob/main/public/coinbase-modal.png?raw=true" width="1000" alt="Preview">
